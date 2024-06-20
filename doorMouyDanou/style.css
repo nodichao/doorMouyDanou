@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+body{
+    font-family: 'Reddit Mono';
+    padding: 0;
+}
+
+.header{
+   /* border: 1px solid red;*/
+    position: fixed;
+    width: 99%;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    /*border: 1px solid red;*/
+    padding: 0;
+    margin-right: 50px;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: black;
+}
+.menu ul a:hover{
+    letter-spacing: 2px;
+    transition: 0.3s;
+    color: red;
+    font-weight: bold;
+    
+}
+.menu ul li{
+    margin: 0 30px;
+}
+
+.logo{
+    margin-left: 30px;
+}
+
+main{
+    margin-top: 70px;
+}
+
+.introduction, .intro1,.intro2{
+    width: 100%;
+    /*border: 1px solid red;*/
+}
+.introduction{
+    display: flex;
+    justify-content: space-around;
+}
+
+.intro1,.intro2{
+    width: 40%;
+    height: 400px;
+    padding-top: 30px;
+}
+
+.intro2{
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.intro2 p{
+    width: 75%;
+}
+
+.intro1{
+    margin-left: 25px;
+}
+
+.intro1 img{
+    width: 100%;
+    border: 5px solid red;
+}
+
+.actions{
+    margin-top: 50px;
+}
+
+.actions button:nth-child(1){
+    padding: 15px;
+    border-radius: 8px;
+    border: 0;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    font-family: 'Reddit Mono';
+    width: 25%;
+}
+.actions button:nth-child(1):hover{
+    background-color: rgb(180, 11, 11);
+}
+
+.actions button:nth-child(2){
+    padding: 15px;
+    border-radius: 8px;
+    border: 0;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    font-family: 'Reddit Mono';
+    width: 25%;
+}
+
+.actions button:nth-child(2):hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.row .profile{
+    /*border: 1px solid red;*/
+    width: 25%;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.profile button{
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 0;
+    height: 40px;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    font-family: 'Reddit Mono';
+}
+
+.profile p{
+    padding-left: 10px;
+}
+.picture{
+    /*border: 1px solid blue;*/
+    height: 55%;
+    overflow: hidden;
+}
+
+
+.row .picture img{
+    width: 100%;
+   
+}
+
+.row{
+    display: flex;
+    margin: 25px;
+}
+
+.team1{
+    justify-content: space-around;
+}
+.team2{
+    justify-content: space-around;
+    
+}
+
+.team3{
+    justify-content: center;
+}

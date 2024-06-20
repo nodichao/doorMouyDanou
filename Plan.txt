@@ -18,5 +18,6 @@ footer
 
 futur developpeur
 
-plusieurs langues
-geolocalisation
+------------------------------------------------------------------------
+
+1) prendre la police Reddit Mono
