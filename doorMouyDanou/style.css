@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 body{
     font-family: 'Reddit Mono';
@@ -7,12 +9,13 @@ body{
 }
 
 .header{
-   /* border: 1px solid red;*/
     position: fixed;
-    width: 99%;
+    width: 100%;
     top: 0;
     left: 0;
     background-color: white;
+    z-index: 1;
+    opacity: 0.8;
 }
 
 .navigation{
@@ -23,7 +26,6 @@ body{
 .menu ul{
     display: flex;
     list-style: none;
-    /*border: 1px solid red;*/
     padding: 0;
     margin-right: 50px;
 }
@@ -46,14 +48,16 @@ body{
 .logo{
     margin-left: 30px;
 }
-
+h2 span{
+    font-family: 'Pacifico';
+    color: red;
+}
 main{
     margin-top: 70px;
 }
 
 .introduction, .intro1,.intro2{
     width: 100%;
-    /*border: 1px solid red;*/
 }
 .introduction{
     display: flex;
@@ -120,7 +124,6 @@ main{
 }
 
 .row .profile{
-    /*border: 1px solid red;*/
     width: 25%;
     height: 550px;
     overflow: hidden;
@@ -143,13 +146,22 @@ main{
 .profile p{
     padding-left: 10px;
 }
+
+.profile{
+    background-color: white;
+}
 .picture{
-    /*border: 1px solid blue;*/
     height: 55%;
     overflow: hidden;
 }
 
-
+.arona,.birane{
+   position: relative;
+}
+.arona img, .birane img{
+    position: absolute;
+    top: -40px;
+}
 .row .picture img{
     width: 100%;
    
@@ -170,4 +182,120 @@ main{
 
 .team3{
     justify-content: center;
+    padding-bottom: 50px;
+}
+.equipe{
+    background-color:rgb(0, 0, 0)   ;
+    border-radius: 30px;
+}
+.apropos h2{
+    text-align: center;
+}
+.inAbout{
+    display: flex;
+    justify-content: space-around;
+}
+
+.inAbout1,.inAbout2{
+    width: 45%;
+}
+
+.inAbout2 p{
+    margin-top: 15%;
+}
+
+.inAbout1{
+    border-radius: 30px;
+    overflow: hidden;
+}
+.inAbout1 img{
+    width: 100%;
+}
+.form{
+    width: 40%;
+    margin: 0 auto;
+    color: red;
+    
+}
+.contact h2{
+     text-align: center;
+}
+.form1{
+    display: flex;
+    justify-content: space-between;
+}
+.form1 input{
+    width: 98%;
+    height: 35px;
+    
+}
+
+.prenom,.nom,.email,.telephone{
+    width: 45%;
+}
+
+.message textarea{
+    width: 98%;
+    height: 100px;
+}
+
+.contact{
+    background-color: black;
+    padding-bottom: 25px;
+}
+
+.contact button{
+    padding: 15px;
+    border-radius: 8px;
+    border: 0;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    font-family: 'Reddit Mono';
+    width: 35%;
+}
+.contact h2{
+    margin: 20px auto;
+}
+
+.footer{
+    background-color: #c42028;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.footer div{
+    /*border: 1px solid black;*/
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+
+.f1 p,.f1 ul{
+    /*border: 1px solid black;*/
+    display: inline-block;
+}
+.f1 p{
+    margin-left: 15px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.f1 ul{
+    width: 50%;
+    transform: translate(50%,0);
+    list-style-type: none;
+    
+}
+
+
+.logo_2{
+    font-weight: bold;
+   font-size: 16px;
 }
