@@ -6,7 +6,9 @@
 body{
     font-family: 'Reddit Mono';
     padding: 0;
+    /* margin: 0; */
 }
+
 
 .header{
     position: fixed;
@@ -27,19 +29,23 @@ body{
     display: flex;
     list-style: none;
     padding: 0;
-    margin-right: 50px;
+    margin-right: 0px;
 }
-
-.menu ul a{
+/* amelioration du nav */
+.menu ul a {
     text-decoration: none;
     color: black;
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+    
 }
-.menu ul a:hover{
-    letter-spacing: 2px;
-    transition: 0.3s;
+.menu ul a:hover {
+    /* background-color: #f0f0f0; */
     color: red;
     font-weight: bold;
-    
+    letter-spacing: 2px;
+    transition:0.3s ease;
 }
 .menu ul li{
     margin: 0 30px;
@@ -59,9 +65,18 @@ main{
 .introduction, .intro1,.intro2{
     width: 100%;
 }
+
+/* definition d'un border radius */
 .introduction{
     display: flex;
     justify-content: space-around;
+    .intro1{
+        border-radius: 8px;
+        img{
+            border-radius: 8px;
+        }
+    }
+    
 }
 
 .intro1,.intro2{
@@ -131,7 +146,7 @@ main{
     box-shadow: 5px 5px 5px black;
 }
 
-.profile button{
+.profile a{
     padding: 5px;
     border-radius: 5px;
     margin-left: 10px;
@@ -141,6 +156,21 @@ main{
     cursor: pointer;
     color: white;
     font-family: 'Reddit Mono';
+    text-decoration: none;
+    transition: 0.2s;
+}
+.profile a:hover{
+    transition: 0.2s;
+    padding: 7px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 0;
+    height: 40px;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    font-family: 'Reddit Mono';
+    text-decoration: none;
 }
 
 .profile p{
@@ -211,10 +241,13 @@ main{
 .inAbout1 img{
     width: 100%;
 }
+
+
+/* changement de la couleur en white */
 .form{
     width: 40%;
     margin: 0 auto;
-    color: red;
+    color: white;
     
 }
 .contact h2{
@@ -244,6 +277,8 @@ main{
     padding-bottom: 25px;
 }
 
+/* aggrandissemment du button */
+
 .contact button{
     padding: 15px;
     border-radius: 8px;
@@ -252,50 +287,67 @@ main{
     cursor: pointer;
     color: white;
     font-family: 'Reddit Mono';
-    width: 35%;
+    width: 100%;
+    /* margin-top: 10px; */
 }
 .contact h2{
     margin: 20px auto;
 }
 
-.footer{
+/* redefinition du footer */
+.footer {
     background-color: #c42028;
-    height: 200px;
+    color: white;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-}
-.footer div{
-    /*border: 1px solid black;*/
-}
-.footer a{
-    text-decoration: none;
-    color: white;
+    text-align: center;
 }
 
-.footer a:hover{
+.f1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo_2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.f1 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.f1 li {
+    margin: 0 15px;
+}
+
+.f1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.f1 a:hover {
     text-decoration: underline;
 }
 
-
-.f1 p,.f1 ul{
-    /*border: 1px solid black;*/
-    display: inline-block;
-}
-.f1 p{
-    margin-left: 15px;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-.f1 ul{
-    width: 50%;
-    transform: translate(50%,0);
-    list-style-type: none;
-    
-}
-
-
-.logo_2{
-    font-weight: bold;
-   font-size: 16px;
+.footer-liscence {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-size: 14px;
+    width: 100%;
 }
