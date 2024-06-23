@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a class="retour" href="/projetDMD/doorMouyDanou/doorMouyDanou/index.html">Retour</a>
+    <a class="retour" href="../../index.html">Retour</a>
 <!-- img et description -->
     <section class="section1">
-        <img src="/projetDMD/doorMouyDanou/doorMouyDanou/ressources/Birane.jpg" alt="photo de profil" class="photo-profile">
+        <img src="../../ressources/Birane.jpg" alt="photo de profil" class="photo-profile">
         <p>Etudiant de Liscence en Genie Logiciel. Passionner de l'informatique.</p>
     </section>
     <hr>
@@ -35,54 +35,60 @@
 <!-- contactez moi -->
     <section class="section3">
         <h2>Contactez Moi</h2>
-        <div class="contact">
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <p>+221 77-815-65-69</p>
+        <div>
+            <div class="contact">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+221 77-815-65-69</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>biranenini6762@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Dakar Guele Tapée </p>
+                </div>
             </div>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <p>biranenini6762@gmail.com</p>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Dakar Guele Tapée </p>
-            </div>
+            <!-- formulaire de contact -->
+             <div class="contact2">
+                <form class="contact-form">
+                    <div>
+                        <div>
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        
+                        <div>
+                            <label for="prenom">Prenom</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+                        
+                    </div>
+                    
+                    <div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="tel">Telephone</label>
+                            <input type="tel" id="tel" name="tel" required>
+                        </div>
+                        
+                    </div>
+                    
+        
+        
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+        
+                    <button type="submit">Envoyer Message</button>
+                </form>
+             </div>
+    
         </div>
-        <!-- formulaire de contact -->
-        <form class="contact-form">
-            <div>
-                <div>
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" required>
-                </div>
                 
-                <div>
-                    <label for="prenom">Prenom</label>
-                    <input type="text" id="prenom" name="prenom" required>
-                </div>
-                
-            </div>
-            
-            <div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="tel">Telephone</label>
-                    <input type="tel" id="tel" name="tel" required>
-                </div>
-                
-            </div>
-            
-
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Envoyer Message</button>
-        </form>
     </section>
 
 </body>
